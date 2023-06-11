@@ -5,9 +5,9 @@ Console.Clear();
 Console.WriteLine("Поиск наибольшего числа из двух");
 
 Console.Write("Введите первое число:");
-number1 = int.Parse(Console.ReadLine());
+number1 = int.Parse(Console.ReadLine() ?? "");
 Console.Write("Введите второе число:");
-number2 = int.Parse(Console.ReadLine());
+number2 = int.Parse(Console.ReadLine() ?? "");
 
 if (number1 > number2)
 {
