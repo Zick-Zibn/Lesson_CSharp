@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Java\\C_Sharp_Lesson\\task1\\Task1.csproj": {}
+    "D:\\Java\\C_Sharp_Lesson\\Task1\\Task1.csproj": {}
   },
   "projects": {
-    "D:\\Java\\C_Sharp_Lesson\\task1\\Task1.csproj": {
+    "D:\\Java\\C_Sharp_Lesson\\Task1\\Task1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Java\\C_Sharp_Lesson\\task1\\Task1.csproj",
+        "projectUniqueName": "D:\\Java\\C_Sharp_Lesson\\Task1\\Task1.csproj",
         "projectName": "Task1",
-        "projectPath": "D:\\Java\\C_Sharp_Lesson\\task1\\Task1.csproj",
+        "projectPath": "D:\\Java\\C_Sharp_Lesson\\Task1\\Task1.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Java\\C_Sharp_Lesson\\task1\\obj\\",
+        "outputPath": "D:\\Java\\C_Sharp_Lesson\\Task1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
