@@ -3,6 +3,8 @@ int     i = 1;
 string  value;
 bool    canParse;
 
+Console.Clear();
+
 while (true)
 {
     Console.WriteLine("Введите число: ");
