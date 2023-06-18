@@ -4,13 +4,14 @@ bool    canParse, polydromic;
 
 Console.Clear();
 Console.WriteLine("Проверка числа, является ли оно полидромным");
+Console.WriteLine("Если необходимо прервать выполнение программы, вместо ввода числа. Введите: quit");
 
 while (true)
 {    
     Console.Write("Введите пятизначное число: ");
 
     value = Console.ReadLine()?? "";
-
+    // если пользователь захочет прервать выполнение программы)
     if (value.ToLower() == "quit")
         break;
 
