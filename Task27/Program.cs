@@ -9,7 +9,7 @@ static void GetInputNuber()
     {
         Console.Write("Введите число: ");
 
-        if (int.TryParse(Console.ReadLine() ?? "", out number)) ;
+        if (int.TryParse(Console.ReadLine() ?? "", out number))
         {
             SumNumber(number);
             break;
@@ -31,5 +31,6 @@ static int SumNumber(int number)
     
     sum = sum + number;
     Console.Write($" -> {sum}");
+    
     return sum;
 }
