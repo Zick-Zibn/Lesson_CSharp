@@ -1,5 +1,4 @@
 ﻿int numberA = 0, numberB = 0;
-int result;
 
 GetInputNuber(ref numberA, ref numberB);
 
