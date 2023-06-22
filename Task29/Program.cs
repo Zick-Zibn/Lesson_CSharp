@@ -1,7 +1,6 @@
 ﻿int[] array;
 int firstRange = 0;
 int secondRange = 0;
-Random  rnd = new Random();
 
 GetNumberRange(ref firstRange, ref secondRange);
 
@@ -56,7 +55,7 @@ static void ShowArray(int[] array)
 
     Console.Write(" -> [");
     i = 0;
-    
+
     while (i < array.Length)
     {
         Console.Write("{0}{1}",array[i], i == 7 ? "" : ",");
