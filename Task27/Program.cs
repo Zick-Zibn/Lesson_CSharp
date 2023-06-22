@@ -21,10 +21,10 @@ static int SumNumber(int number)
 {
     int sum = 0;
 
+    Console.Write("{0}", number);
+    
     while (number > 0)
-    {
-        Console.Write("{0}{1}", number % 10, number > 10 ? "," : "");
-        
+    {                
         sum = sum + (number % 10);
         number = number / 10;
     }
