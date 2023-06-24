@@ -1,13 +1,8 @@
-﻿int[]   array;
+﻿double[]   array;
 bool    sizeWrong = false;
 int rangeFrom = 0, rangeTo = 0, arraySize = 0;
 
-GetDataFromUser(ref rangeFrom, ref rangeTo, ref arraySize);
-array = InitArray(arraySize, rangeFrom, rangeTo);
-
-Console.WriteLine($"[{String.Join(",", array)}] -> {sumNotEvenElements(array)}");
-
-void GetDataFromUser(ref int rangeFrom, ref int rangeTo, ref int arraySize)
+void GetDataFromUser(ref int firstRange, ref int secondRange, ref int arraySize)
 {
     while (true)
     {
@@ -16,10 +11,10 @@ void GetDataFromUser(ref int rangeFrom, ref int rangeTo, ref int arraySize)
             sizeWrong = false;
 
             Console.Write("Введите начала диапазона: ");
-            rangeFrom = int.Parse(Console.ReadLine()??"");
+            firstRange = int.Parse(Console.ReadLine()??"");
 
             Console.Write("Введите конец диапазона: ");
-            rangeTo = int.Parse(Console.ReadLine()??"");
+            secondRange = int.Parse(Console.ReadLine()??"");
 
             Console.Write("Введите размер массива: ");
             arraySize = int.Parse(Console.ReadLine()??"");
@@ -39,28 +34,4 @@ void GetDataFromUser(ref int rangeFrom, ref int rangeTo, ref int arraySize)
                 Console.WriteLine("Невозможно пребразовать введенное значение в число {0}", exc.Message);
         }
     } 
-}
-
-int[] InitArray(int arraySize, int rangeFrom, int rangeTo)
-{
-    int[] array = new int[arraySize];
-
-    for (int i = 0; i < array.Length; i++)
-    {
-        array[i] = new Random().Next(rangeFrom, rangeTo);
-    }
-
-    return array;
-}
-
-int sumNotEvenElements(int[] array)
-{
-    int sum = 0;
-
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (i % 2 == 0)
-            sum += array[i];
-    }
-    return sum;
 }
