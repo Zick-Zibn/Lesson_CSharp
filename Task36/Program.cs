@@ -7,7 +7,6 @@ array = InitArray(arraySize, rangeFrom, rangeTo);
 
 Console.WriteLine($"[{String.Join(",", array)}] -> {sumNotEvenElements(array)}");
 
-
 void GetDataFromUser(ref int firstRange, ref int secondRange, ref int arraySize)
 {
     while (true)
