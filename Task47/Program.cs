@@ -32,7 +32,6 @@ void GetDataFromUser(ref int qtyRows, ref int qtyColumns, ref int startRandomNum
                 inputWrong = true;
                 throw new Exception($"Количество {(qtyRows <= 0 ? "строк" : "столбцов")} не может быть меньше или равно нулю");
             }
-
             break;
         }
         catch (Exception exc)
@@ -56,8 +55,7 @@ double[,] InitArray(int rowsQty, int columnsQty, int startRandomNum, int endRand
         for (int k = 0; k < array.GetLength(1); k++)
         {
             array[i,k] = new Random().Next(startRandomNum, endRandomNum + 1) + new Random().NextDouble();
-        }
-        
+        }        
     }
     return array;
 }
