@@ -5,7 +5,6 @@ GetDataFromUser(ref qtyRows, ref qtyColumns, ref startRandomNum, ref endRandomNu
 double[,] array = InitArray(qtyRows, qtyColumns, startRandomNum, endRandomNum);
 PrinArray(array);
 
-
 void GetDataFromUser(ref int qtyRows, ref int qtyColumns, ref int startRandomNum, ref int endRandomNum)
 {
     bool inputWrong = false;
