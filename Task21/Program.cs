@@ -10,31 +10,34 @@ Console.WriteLine($"Расстояние между двумя точками A(
 
 static void initCoordinates(ref int x1, ref int x2, ref int y1, ref int y2, ref int z1, ref int z2)
 {
-    try
+    while (true)
     {
-        Console.Clear();
-        Console.Write("Введите X1: ");
-        x1 = int.Parse(Console.ReadLine()??"");
+        try
+        {
+            //Console.Clear();
+            Console.Write("Введите X1: ");
+            x1 = int.Parse(Console.ReadLine()??"");
 
-        Console.Write("Введите Y1: ");
-        y1 = int.Parse(Console.ReadLine()??"");
+            Console.Write("Введите Y1: ");
+            y1 = int.Parse(Console.ReadLine()??"");
 
-        Console.Write("Введите Z1: ");
-        z1 = int.Parse(Console.ReadLine()??"");
+            Console.Write("Введите Z1: ");
+            z1 = int.Parse(Console.ReadLine()??"");
 
-        Console.Write("Введите X2: ");
-        x2 = int.Parse(Console.ReadLine()??"");
+            Console.Write("Введите X2: ");
+            x2 = int.Parse(Console.ReadLine()??"");
 
-        Console.Write("Введите Y2: ");
-        y2 = int.Parse(Console.ReadLine()??"");
+            Console.Write("Введите Y2: ");
+            y2 = int.Parse(Console.ReadLine()??"");
 
-        Console.Write("Введите Z2");
-        z2 = int.Parse(Console.ReadLine()??"");
-
-    }
-    catch (Exception exc)
-    {
-        Console.WriteLine($"Ошибка ввода координат {exc.Message}");
-        return;
+            Console.Write("Введите Z2: ");
+            z2 = int.Parse(Console.ReadLine()??"");
+            break;
+        }
+        catch (Exception exc)
+        {
+            Console.WriteLine($"Ошибка ввода координат {exc.Message}");
+            //return;
+        }
     }
 }

@@ -4,7 +4,7 @@ int[] array  = InitArray(qtyNumber);
 
 Console.WriteLine($"{String.Join(",", array)} -> {CountPositiveNumber(array)}");
 
-int[] InitArray(int qtyNumber)
+int[] InitArray(int qtyNumber)  
 {
     int[] array = new int[qtyNumber];
 
