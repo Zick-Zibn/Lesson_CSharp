@@ -9,7 +9,6 @@ PrintArray(array);
 Console.WriteLine();
 Console.WriteLine($"Среднее арифметическое каждого столбца: {String.Join("; ", GetAverageByColumn(array))}.");
 
-
 void GetDataFromUser(ref int qtyRows, ref int qtyColumns)
 {
     bool inputWrong = false;
@@ -23,13 +22,18 @@ void GetDataFromUser(ref int qtyRows, ref int qtyColumns)
             Console.Write("Введите количество строк массива: ");
             qtyRows = int.Parse(Console.ReadLine() ?? "");
 
+            if (qtyRows <= 0)
+            {
+                inputWrong = true;
+                throw new Exception("Количество строк не может быть меньше или равно нулю");
+            }
             Console.Write("Введите количество столбцов массива: ");
             qtyColumns = int.Parse(Console.ReadLine() ?? "");
 
-            if (qtyRows <= 0 || qtyColumns <= 0)
+            if (qtyColumns <= 0)
             {
                 inputWrong = true;
-                throw new Exception($"Количество {(qtyRows <= 0 ? "строк" : "столбцов")} не может быть меньше или равно нулю");
+                throw new Exception("Количество столбцов не может быть меньше или равно нулю");
             }
             break;
         }
@@ -91,11 +95,11 @@ double[] GetAverageByColumn(int[,] inArray)
 }
 /*
 Введите количество строк массива: 4
-Введите количество столбцов массива: 4
-2 9 9 7 
-1 7 3 9
-5 5 9 9
-4 2 1 8
+Введите количество столбцов массива: 5
+5 7 6 9 7 
+1 4 7 9 3
+6 3 2 1 8
+4 5 6 6 2
 
-Среднее арифметическое каждого столбца: 3; 5,75; 5,5; 8,25.
+Среднее арифметическое каждого столбца: 4; 4,75; 5,25; 6,25; 5.
 */
