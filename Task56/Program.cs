@@ -4,8 +4,6 @@ GetDataFromUser(ref arrayRows, ref arrayColumns);
 
 int[,] array = InitArray(arrayRows, arrayColumns);
 
-
-
 PrintArray(array);
 Console.WriteLine();
 
@@ -75,7 +73,6 @@ void PrintArray(int[,] inArray)
         Console.WriteLine();
     }
 }
-
 int GetRowSmallSumElements(int[,] array)
 {
     int sumElementRow = 0, rowNum = 0;
