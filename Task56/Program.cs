@@ -6,7 +6,6 @@ int[,] array = InitArray(arrayRows, arrayColumns);
 
 PrintArray(array);
 Console.WriteLine();
-
 Console.WriteLine($"Наименьшая сумма элементов в {GetRowSmallSumElements(array)} строке");
 
 void GetDataFromUser(ref int qtyRows, ref int qtyColumns)
