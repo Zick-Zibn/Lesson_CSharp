@@ -82,7 +82,6 @@ int GetRowSmallSumElements(int[,] array)
 
         for (int k = 0; k < array.GetLength(1); k++)
         {
-   
             sumTemp += array[i, k];   
         }
 
