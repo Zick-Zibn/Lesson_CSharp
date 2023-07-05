@@ -78,8 +78,7 @@ void PrintArray(int[,] inArray)
 
 int GetRowSmallSumElements(int[,] array)
 {
-    int sumElementRow = 0;
-    int rowNum = 0;
+    int sumElementRow = 0, rowNum = 0;
 
     for (int i = 0; i < array.GetLength(0); i++)
     {
